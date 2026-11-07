@@ -17,4 +17,4 @@ Termine und Neuigkeiten werden als YAML-Dateien in `_data/` gepflegt – es ist 
 
 ## GitHub Pages aktivieren
 
-In den Repo-Einstellungen unter **Settings → Pages** als Quelle `Deploy from a branch` mit Branch `main` und Ordner `/ (root)` wählen. Die Seite ist danach unter `https://netbuk.github.io/maennerhort/` erreichbar.
+In den Repo-Einstellungen unter **Settings → Pages** als Quelle **GitHub Actions** wählen. Der Workflow `.github/workflows/pages.yml` baut die Seite bei jedem Push auf `main` automatisch mit Jekyll und deployt sie. Die Seite ist danach unter `https://netbuk.github.io/maennerhort/` erreichbar.
