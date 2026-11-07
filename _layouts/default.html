@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'de' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/logo.png' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/logo.png' | relative_url }}" alt="Logo Männerhort" class="brand-logo">
+      <span class="brand-name">Männerhort <em>Steeldart Altendiez</em></span>
+    </a>
+    <nav class="site-nav">
+      <a href="{{ '/#termine' | relative_url }}">Termine</a>
+      <a href="{{ '/#info' | relative_url }}">Informationen</a>
+      <a href="{{ '/#news' | relative_url }}">Neuigkeiten</a>
+    </nav>
+  </header>
+  <main class="site-main">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <p>&copy; {{ 'now' | date: '%Y' }} Männerhort – Hobbygruppe Steeldart aus Altendiez</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+# Männerhort – Steeldart Altendiez
+
+Flatfile-GitHub-Page (Jekyll, ohne Datenbank) für die Hobbygruppe Steeldart aus Altendiez.
+
+## Aufbau
+
+- `index.md` – Startseite mit den Bereichen Termine, Informationen und Neuigkeiten
+- `_data/termine.yml` – alle Termine (einfach Einträge ergänzen/anpassen)
+- `_data/news.yml` – Neuigkeiten
+- `_layouts/default.html` – Seitenlayout (Header mit Logo, Navigation, Footer)
+- `assets/logo.png` – Gruppenlogo
+- `assets/css/style.css` – Gestaltung
+
+## Inhalte bearbeiten
+
+Termine und Neuigkeiten werden als YAML-Dateien in `_data/` gepflegt – es ist keine Datenbank nötig. Änderungen committen und pushen, GitHub Pages baut die Seite automatisch neu.
+
+## GitHub Pages aktivieren
+
+In den Repo-Einstellungen unter **Settings → Pages** als Quelle `Deploy from a branch` mit Branch `main` und Ordner `/ (root)` wählen. Die Seite ist danach unter `https://netbuk.github.io/maennerhort/` erreichbar.
