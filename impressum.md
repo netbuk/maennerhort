@@ -9,10 +9,10 @@ title: Impressum
   <div class="card">
     <h3>Angaben gemäß § 5 DDG</h3>
     <p>
-      <strong>Männerhort – Hobbygruppe Steeldart Altendiez</strong><br>
-      [Name der verantwortlichen Person]<br>
-      [Straße und Hausnummer]<br>
-      [PLZ Ort]<br>
+      <strong>Männerhort - Altendiez</strong><br>
+      Christian Kantelberg<br>
+      Obergasse 8<br>
+      65624<br>
       Deutschland
     </p>
   </div>
@@ -20,14 +20,13 @@ title: Impressum
   <div class="card" style="margin-top: 1rem;">
     <h3>Kontakt</h3>
     <p>
-      E-Mail: [E-Mail-Adresse]<br>
-      Oder persönlich donnerstags ab 19:30 Uhr im Vereinsheim in Altendiez.
+      E-Mail: servus@netbuk.de
     </p>
   </div>
 
   <div class="card" style="margin-top: 1rem;">
     <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
-    <p>[Name der inhaltlich verantwortlichen Person], Anschrift wie oben.</p>
+    <p>Christian Kantelberg, Anschrift wie oben.</p>
   </div>
 
   <div class="card" style="margin-top: 1rem;">
