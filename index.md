@@ -17,7 +17,7 @@ title: Start
     {% if jahr.name == aktuelles_jahr %}{% assign termine_aktuell = jahr.items %}{% endif %}
   {% endfor %}
   <h2>Termine {{ aktuelles_jahr }}</h2>
-  <p class="section-intro">Unsere nächsten Termine</p>
+  <p class="section-intro">Was ist dieses Jahr gelaufen und was steht noch an.</p>
   {% if termine_aktuell.size > 0 %}
   <div class="termine-grid">
     {% for termin in termine_aktuell %}
