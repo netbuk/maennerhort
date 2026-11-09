@@ -5,6 +5,7 @@ title: Terminarchiv
 
 <section id="termine-archiv" class="section">
   {% assign aktuelles_jahr = 'now' | date: '%Y' %}
+  {% assign heute = 'now' | date: '%Y-%m-%d' %}
   {% assign jahre = site.data.termine | sort: 'datum' | reverse | group_by_exp: 't', 't.datum | date: "%Y"' | sort: 'name' | reverse %}
   <h2>Terminarchiv</h2>
   <p class="section-intro">Alle Termine aus den vergangenen Jahren – zurück zu den <a href="{{ '/#termine' | relative_url }}">aktuellen Terminen {{ aktuelles_jahr }}</a>.</p>
@@ -23,6 +24,9 @@ title: Terminarchiv
         </div>
         <div class="termin-body">
           <h3>{{ termin.titel }}</h3>
+          <p class="termin-status">
+            {% if termin.datum >= heute %}<span class="status status-offen">offen</span>{% else %}<span class="status status-abgeschlossen">abgeschlossen</span>{% endif %}
+          </p>
           <p class="termin-ort">{{ termin.ort }}</p>
           <p>{{ termin.beschreibung }}</p>
         </div>

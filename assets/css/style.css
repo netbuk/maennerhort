@@ -302,6 +302,32 @@ body {
   font-weight: 600;
 }
 
+.termin-status {
+  margin: 0.15rem 0 0.4rem;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.status-offen {
+  background: rgba(24, 160, 88, 0.16);
+  border: 1px solid #18a058;
+  color: #3ddc84;
+}
+
+.status-abgeschlossen {
+  background: rgba(154, 163, 173, 0.12);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
 .news-list {
   display: grid;
   gap: 1rem;
