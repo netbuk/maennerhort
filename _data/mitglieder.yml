@@ -5,7 +5,6 @@
   wanderpokal: 1
   profile:
     scolia: ""
-    autodarts: ""
     grand_darts: ""
     target: ""
 - name: "Alex"
@@ -15,7 +14,6 @@
   wanderpokal: 0
   profile:
     scolia: ""
-    autodarts: ""
     grand_darts: ""
     target: ""
 - name: "Andy"
@@ -25,7 +23,6 @@
   wanderpokal: 0
   profile:
     scolia: ""
-    autodarts: ""
     grand_darts: ""
     target: ""
 - name: "Ben"
@@ -35,7 +32,6 @@
   wanderpokal: 0
   profile:
     scolia: ""
-    autodarts: ""
     grand_darts: ""
     target: ""
 - name: "Björn"
@@ -45,7 +41,6 @@
   wanderpokal: 0
   profile:
     scolia: ""
-    autodarts: ""
     grand_darts: ""
     target: ""
 - name: "Christian"
@@ -65,7 +60,6 @@
   wanderpokal: 1
   profile:
     scolia: ""
-    autodarts: ""
     grand_darts: ""
     target: ""
 - name: "Jörg"
@@ -75,7 +69,6 @@
   wanderpokal: 0
   profile:
     scolia: ""
-    autodarts: ""
     grand_darts: ""
     target: ""
 - name: "Philipp"
@@ -85,7 +78,6 @@
   wanderpokal: 0
   profile:
     scolia: ""
-    autodarts: ""
     grand_darts: ""
     target: ""
 - name: "Thorsten"
@@ -95,7 +87,6 @@
   wanderpokal: 0
   profile:
     scolia: ""
-    autodarts: ""
     grand_darts: ""
     target: ""
 - name: "Thorsten"
@@ -105,6 +96,5 @@
   wanderpokal: 4
   profile:
     scolia: ""
-    autodarts: ""
     grand_darts: ""
     target: ""

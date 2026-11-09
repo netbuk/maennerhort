@@ -66,7 +66,6 @@ title: Start
       {% if mitglied.dabei_seit != "" %}<p class="member-meta">Dabei seit: {{ mitglied.dabei_seit }}</p>{% endif %}
       <div class="profile-links">
         {% if mitglied.profile.scolia != "" %}<a class="profile-chip" href="{{ mitglied.profile.scolia }}" title="Scolia-Profil" target="_blank" rel="noopener">S</a>{% endif %}
-        {% if mitglied.profile.autodarts != "" %}<a class="profile-chip" href="{{ mitglied.profile.autodarts }}" title="Autodarts-Profil" target="_blank" rel="noopener">A</a>{% endif %}
         {% if mitglied.profile.grand_darts != "" %}<a class="profile-chip" href="{{ mitglied.profile.grand_darts }}" title="Grand Darts-Profil" target="_blank" rel="noopener">GD</a>{% endif %}
         {% if mitglied.profile.target != "" %}<a class="profile-chip" href="{{ mitglied.profile.target }}" title="Target-Profil" target="_blank" rel="noopener">T</a>{% endif %}
       </div>

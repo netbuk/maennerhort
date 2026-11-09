@@ -164,7 +164,7 @@ body {
 
 .profile-links {
   display: grid;
-  grid-template-columns: repeat(4, 44px);
+  grid-template-columns: repeat(3, 44px);
   gap: 0.5rem;
   margin-top: 0.75rem;
 }
