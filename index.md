@@ -56,7 +56,7 @@ title: Start
 
 <section id="mitglieder" class="section">
   <h2>Darter</h2>
-  <p class="section-intro">The Hall of Fame ;)</p>
+  <p class="section-intro">The men of steel ;)</p>
   <div class="info-grid">
     {% assign mitglieder = site.data.mitglieder | sort: 'name' %}
     {% for mitglied in mitglieder %}
