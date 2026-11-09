@@ -5,7 +5,7 @@ title: Terminarchiv
 
 <section id="termine-archiv" class="section">
   {% assign aktuelles_jahr = 'now' | date: '%Y' %}
-  {% assign jahre = site.data.termine | sort: 'datum' | group_by_exp: 't', 't.datum | date: "%Y"' | sort: 'name' | reverse %}
+  {% assign jahre = site.data.termine | sort: 'datum' | reverse | group_by_exp: 't', 't.datum | date: "%Y"' | sort: 'name' | reverse %}
   <h2>Terminarchiv</h2>
   <p class="section-intro">Alle Termine aus den vergangenen Jahren – zurück zu den <a href="{{ '/#termine' | relative_url }}">aktuellen Terminen {{ aktuelles_jahr }}</a>.</p>
   {% assign hat_alte = false %}

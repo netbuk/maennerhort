@@ -11,7 +11,7 @@ title: Start
 
 <section id="termine" class="section">
   {% assign aktuelles_jahr = 'now' | date: '%Y' %}
-  {% assign jahre = site.data.termine | sort: 'datum' | group_by_exp: 't', 't.datum | date: "%Y"' %}
+  {% assign jahre = site.data.termine | sort: 'datum' | reverse | group_by_exp: 't', 't.datum | date: "%Y"' %}
   {% assign termine_aktuell = '' | split: '' %}
   {% for jahr in jahre %}
     {% if jahr.name == aktuelles_jahr %}{% assign termine_aktuell = jahr.items %}{% endif %}
