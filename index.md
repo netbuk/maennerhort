@@ -30,6 +30,19 @@ title: Start
   </div>
 </section>
 
+<section id="news" class="section">
+  <h2>Neuigkeiten</h2>
+  <div class="news-list">
+    {% for eintrag in site.data.news %}
+    <article class="card news-card">
+      <p class="news-datum">{{ eintrag.datum | date: "%d.%m.%Y" }}</p>
+      <h3>{{ eintrag.titel }}</h3>
+      <p>{{ eintrag.text }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
 <section id="info" class="section">
   <h2>Informationen</h2>
   <div class="info-grid">
@@ -49,18 +62,5 @@ title: Start
       <h3>Mitmachen</h3>
       <p>Schau einfach an einem unserer Termine vorbei oder melde dich bei uns. Neue Mitglieder sind jederzeit herzlich willkommen!</p>
     </div>
-  </div>
-</section>
-
-<section id="news" class="section">
-  <h2>Neuigkeiten</h2>
-  <div class="news-list">
-    {% for eintrag in site.data.news %}
-    <article class="card news-card">
-      <p class="news-datum">{{ eintrag.datum | date: "%d.%m.%Y" }}</p>
-      <h3>{{ eintrag.titel }}</h3>
-      <p>{{ eintrag.text }}</p>
-    </article>
-    {% endfor %}
   </div>
 </section>
