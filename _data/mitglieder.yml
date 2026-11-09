@@ -1,7 +1,7 @@
 - name: "Markus"
   nickname: ""
   rolle: "Gründungsmitglied & Technischer Admin"
-  dabei_seit: ""
+  dabei_seit: "2022"
   wanderpokal: 1
   profile:
     scolia: ""
@@ -11,7 +11,7 @@
 - name: "Alex"
   nickname: "Wursti"
   rolle: "Gründungsmitglied & adm. Turnierleitung"
-  dabei_seit: ""
+  dabei_seit: "2022"
   wanderpokal: 0
   profile:
     scolia: ""
@@ -31,7 +31,7 @@
 - name: "Ben"
   nickname: "Bimbes"
   rolle: "Mitglied"
-  dabei_seit: ""
+  dabei_seit: "2024"
   wanderpokal: 0
   profile:
     scolia: ""
@@ -41,7 +41,7 @@
 - name: "Björn"
   nickname: ""
   rolle: "Mitglied"
-  dabei_seit: ""
+  dabei_seit: "2023"
   wanderpokal: 0
   profile:
     scolia: ""
@@ -56,13 +56,13 @@
   profile:
     scolia: ""
     autodarts: ""
-    autodarts: "Bimbes-Sandman"
+    autodarts: "BIMBES-SANDMAN"
     grand_darts: ""
     target: ""
 - name: "Jürgen"
   nickname: ""
   rolle: "Mitglied"
-  dabei_seit: ""
+  dabei_seit: "2026"
   wanderpokal: 1
   profile:
     scolia: ""
@@ -72,7 +72,7 @@
 - name: "Jörg"
   nickname: ""
   rolle: "Mitglied"
-  dabei_seit: ""
+  dabei_seit: "2023"
   wanderpokal: 0
   profile:
     scolia: ""
@@ -82,17 +82,17 @@
 - name: "Philipp"
   nickname: ""
   rolle: "Mitglied"
-  dabei_seit: ""
+  dabei_seit: "2023"
   wanderpokal: 0
   profile:
     scolia: ""
-    autodarts: ""
+    autodarts: "PHIROI92"
     grand_darts: ""
     target: ""
 - name: "Thorsten"
   nickname: ""
   rolle: "Mitglied"
-  dabei_seit: ""
+  dabei_seit: "2023"
   wanderpokal: 0
   profile:
     scolia: ""
@@ -102,7 +102,7 @@
 - name: "Thorsten"
   nickname: "Rö"
   rolle: "Mitglied"
-  dabei_seit: ""
+  dabei_seit: "2023"
   wanderpokal: 4
   profile:
     scolia: ""
