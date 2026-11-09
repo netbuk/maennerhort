@@ -162,32 +162,52 @@ body {
   font-size: 0.95rem;
 }
 
-.profile-links {
-  display: grid;
-  grid-template-columns: repeat(3, 44px);
-  gap: 0.5rem;
+.profile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
   margin-top: 0.75rem;
 }
 
-.profile-chip {
-  width: 44px;
-  height: 44px;
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.profile-icon {
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--accent-dark);
-  border-radius: 10px;
-  color: var(--accent);
-  text-decoration: none;
-  font-size: 0.85rem;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.profile-chip:hover,
-.profile-chip:focus {
-  background: var(--accent-dark);
-  color: #fff;
+.icon-scolia {
+  background: #e5484d;
+}
+
+.icon-autodarts {
+  background: #2f6fed;
+}
+
+.icon-grand-darts {
+  background: #7c5cbf;
+}
+
+.icon-target {
+  background: #18a058;
+}
+
+.profile-name {
+  color: var(--text);
 }
 
 .member-trophy {

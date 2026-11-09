@@ -64,10 +64,11 @@ title: Start
       <h3>{{ mitglied.name }}{% if mitglied.nickname != "" %} <span class="member-nickname">aka {{ mitglied.nickname }}</span>{% endif %}</h3>
       {% if mitglied.rolle != "" %}<p class="member-meta">{{ mitglied.rolle }}</p>{% endif %}
       {% if mitglied.dabei_seit != "" %}<p class="member-meta">Dabei seit: {{ mitglied.dabei_seit }}</p>{% endif %}
-      <div class="profile-links">
-        {% if mitglied.profile.scolia != "" %}<a class="profile-chip" href="{{ mitglied.profile.scolia }}" title="Scolia-Profil" target="_blank" rel="noopener">S</a>{% endif %}
-        {% if mitglied.profile.grand_darts != "" %}<a class="profile-chip" href="{{ mitglied.profile.grand_darts }}" title="Grand Darts-Profil" target="_blank" rel="noopener">GD</a>{% endif %}
-        {% if mitglied.profile.target != "" %}<a class="profile-chip" href="{{ mitglied.profile.target }}" title="Target-Profil" target="_blank" rel="noopener">T</a>{% endif %}
+      <div class="profile-list">
+        {% if mitglied.profile.scolia != "" %}<div class="profile-row"><span class="profile-icon icon-scolia">S</span>{% if mitglied.profile.scolia contains "http" %}<a href="{{ mitglied.profile.scolia }}" target="_blank" rel="noopener">{{ mitglied.profile.scolia }}</a>{% else %}<span class="profile-name">{{ mitglied.profile.scolia }}</span>{% endif %}</div>{% endif %}
+        {% if mitglied.profile.autodarts != "" %}<div class="profile-row"><span class="profile-icon icon-autodarts">A</span>{% if mitglied.profile.autodarts contains "http" %}<a href="{{ mitglied.profile.autodarts }}" target="_blank" rel="noopener">{{ mitglied.profile.autodarts }}</a>{% else %}<span class="profile-name">{{ mitglied.profile.autodarts }}</span>{% endif %}</div>{% endif %}
+        {% if mitglied.profile.grand_darts != "" %}<div class="profile-row"><span class="profile-icon icon-grand-darts">GD</span>{% if mitglied.profile.grand_darts contains "http" %}<a href="{{ mitglied.profile.grand_darts }}" target="_blank" rel="noopener">{{ mitglied.profile.grand_darts }}</a>{% else %}<span class="profile-name">{{ mitglied.profile.grand_darts }}</span>{% endif %}</div>{% endif %}
+        {% if mitglied.profile.target != "" %}<div class="profile-row"><span class="profile-icon icon-target">T</span>{% if mitglied.profile.target contains "http" %}<a href="{{ mitglied.profile.target }}" target="_blank" rel="noopener">{{ mitglied.profile.target }}</a>{% else %}<span class="profile-name">{{ mitglied.profile.target }}</span>{% endif %}</div>{% endif %}
       </div>
       {% if mitglied.wanderpokal > 0 %}
       <p class="member-trophy">🏆 Wanderpokal des Männerhort: {{ mitglied.wanderpokal }}× gewonnen</p>
