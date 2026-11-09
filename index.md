@@ -6,7 +6,7 @@ title: Start
 <section class="hero">
   <img src="{{ '/assets/logo.png' | relative_url }}" alt="Logo Männerhort" class="hero-logo">
   <h1>Männerhort</h1>
-  <p class="tagline">Männerhort aus Altendiez – wir treffen uns unregelmäßig zum Darten, Trainieren und geselligen Beisammensein.</p>
+  <p class="tagline">Hobby-Darter aus Altendiez – wir treffen uns unregelmäßig zum Darten, Trainieren und geselligen Beisammensein.</p>
 </section>
 
 <section id="termine" class="section">
