@@ -10,10 +10,17 @@ title: Start
 </section>
 
 <section id="termine" class="section">
-  <h2>Termine</h2>
+  {% assign aktuelles_jahr = 'now' | date: '%Y' %}
+  {% assign jahre = site.data.termine | sort: 'datum' | group_by_exp: 't', 't.datum | date: "%Y"' %}
+  {% assign termine_aktuell = '' | split: '' %}
+  {% for jahr in jahre %}
+    {% if jahr.name == aktuelles_jahr %}{% assign termine_aktuell = jahr.items %}{% endif %}
+  {% endfor %}
+  <h2>Termine {{ aktuelles_jahr }}</h2>
   <p class="section-intro">Unsere nächsten Termine</p>
-  <div class="card-grid">
-    {% for termin in site.data.termine %}
+  {% if termine_aktuell.size > 0 %}
+  <div class="termine-grid">
+    {% for termin in termine_aktuell %}
     <article class="card termin-card">
       <div class="termin-datum">
         <span class="termin-wochentag">{{ termin.wochentag }}</span>
@@ -28,6 +35,10 @@ title: Start
     </article>
     {% endfor %}
   </div>
+  {% else %}
+  <p class="section-intro">Aktuell sind keine Termine für {{ aktuelles_jahr }} eingetragen.</p>
+  {% endif %}
+  <p style="margin-top: 1.25rem;"><a href="{{ '/termine-archiv/' | relative_url }}">Ältere Termine im Terminarchiv ansehen →</a></p>
 </section>
 
 <section id="news" class="section">
