@@ -162,6 +162,30 @@ body {
   font-size: 0.95rem;
 }
 
+.profile-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1.25rem;
+  margin: 0.75rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.profile-legend .profile-icon {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  font-size: 0.6rem;
+  border-radius: 6px;
+}
+
 .profile-list {
   display: flex;
   flex-direction: column;

@@ -57,6 +57,12 @@ title: Start
 <section id="mitglieder" class="section">
   <h2>Darter</h2>
   <p class="section-intro">The men of steel ;)</p>
+  <p class="profile-legend">
+    <span class="legend-item"><span class="profile-icon icon-scolia">S</span> Scolia</span>
+    <span class="legend-item"><span class="profile-icon icon-autodarts">A</span> Autodarts</span>
+    <span class="legend-item"><span class="profile-icon icon-grand-darts">GD</span> Grand Darts</span>
+    <span class="legend-item"><span class="profile-icon icon-target">T</span> Target</span>
+  </p>
   <div class="info-grid">
     {% assign mitglieder = site.data.mitglieder | sort: 'name' %}
     {% for mitglied in mitglieder %}
