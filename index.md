@@ -65,10 +65,10 @@ title: Start
       {% if mitglied.rolle != "" %}<p class="member-meta">{{ mitglied.rolle }}</p>{% endif %}
       {% if mitglied.dabei_seit != "" %}<p class="member-meta">Dabei seit: {{ mitglied.dabei_seit }}</p>{% endif %}
       <div class="profile-links">
-        {% if mitglied.profile.scolia != "" %}<a class="profile-chip" href="{{ mitglied.profile.scolia }}" target="_blank" rel="noopener">Scolia</a>{% endif %}
-        {% if mitglied.profile.autodarts != "" %}<a class="profile-chip" href="{{ mitglied.profile.autodarts }}" target="_blank" rel="noopener">Autodarts</a>{% endif %}
-        {% if mitglied.profile.grand_darts != "" %}<a class="profile-chip" href="{{ mitglied.profile.grand_darts }}" target="_blank" rel="noopener">Grand Darts</a>{% endif %}
-        {% if mitglied.profile.target != "" %}<a class="profile-chip" href="{{ mitglied.profile.target }}" target="_blank" rel="noopener">Target</a>{% endif %}
+        {% if mitglied.profile.scolia != "" %}<a class="profile-chip" href="{{ mitglied.profile.scolia }}" title="Scolia-Profil" target="_blank" rel="noopener">S</a>{% endif %}
+        {% if mitglied.profile.autodarts != "" %}<a class="profile-chip" href="{{ mitglied.profile.autodarts }}" title="Autodarts-Profil" target="_blank" rel="noopener">A</a>{% endif %}
+        {% if mitglied.profile.grand_darts != "" %}<a class="profile-chip" href="{{ mitglied.profile.grand_darts }}" title="Grand Darts-Profil" target="_blank" rel="noopener">GD</a>{% endif %}
+        {% if mitglied.profile.target != "" %}<a class="profile-chip" href="{{ mitglied.profile.target }}" title="Target-Profil" target="_blank" rel="noopener">T</a>{% endif %}
       </div>
       {% if mitglied.wanderpokal > 0 %}
       <p class="member-trophy">🏆 Wanderpokal des Männerhort: {{ mitglied.wanderpokal }}× gewonnen</p>
