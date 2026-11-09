@@ -6,12 +6,12 @@ title: Start
 <section class="hero">
   <img src="{{ '/assets/logo.png' | relative_url }}" alt="Logo Männerhort" class="hero-logo">
   <h1>Männerhort</h1>
-  <p class="tagline">Hobbygruppe Steeldart aus Altendiez – wir treffen uns regelmäßig zum Darten, Trainieren und geselligen Beisammensein.</p>
+  <p class="tagline">Männerhort aus Altendiez – wir treffen uns unregelmäßig zum Darten, Trainieren und geselligen Beisammensein.</p>
 </section>
 
 <section id="termine" class="section">
   <h2>Termine</h2>
-  <p class="section-intro">Unsere nächsten Termine – wir freuen uns über jeden, der vorbeischaut!</p>
+  <p class="section-intro">Unsere nächsten Termine</p>
   <div class="card-grid">
     {% for termin in site.data.termine %}
     <article class="card termin-card">
@@ -48,19 +48,15 @@ title: Start
   <div class="info-grid">
     <div class="card">
       <h3>Über uns</h3>
-      <p>Wir sind der <strong>Männerhort</strong>, eine Hobbygruppe für <strong>Steeldart</strong> aus <strong>Altendiez</strong>. Egal ob Anfänger oder erfahrener Spieler – bei uns ist jeder willkommen.</p>
+      <p>Wir sind der <strong>Männerhort</strong> - Altendiez, Hobby-<strong>Steeldarter</strong> aus <strong>Überzeugung</strong>. </p>
     </div>
     <div class="card">
       <h3>Treffpunkt</h3>
-      <p>Wir treffen uns in der Regel <strong>donnerstags ab 19:30 Uhr</strong> im Vereinsheim in Altendiez. Alle Boards stehen zur freien Verfügung.</p>
+      <p>Wir treffen uns in unregelmäßigen Abständen im <strong>Männerhort</strong> in Altendiez. </p>
     </div>
     <div class="card">
       <h3>Steeldart</h3>
-      <p>Beim Steeldart spielen wir mit Pfeilen mit Stahlspitze auf Boards mit Stahldraht – klassisch 501, Double-Out. Wer kein eigenes Pfeil-Set hat, kann sich vor Ort eins ausleihen.</p>
-    </div>
-    <div class="card">
-      <h3>Mitmachen</h3>
-      <p>Schau einfach an einem unserer Termine vorbei oder melde dich bei uns. Neue Mitglieder sind jederzeit herzlich willkommen!</p>
+      <p>Wir spielen mit richtigen Darts :D – klassisch 501, Double-Out.</p>
     </div>
   </div>
 </section>
