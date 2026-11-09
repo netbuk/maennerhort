@@ -3,3 +3,4 @@ description: "Hobbygruppe Steeldart aus Altendiez – Termine, Informationen und
 lang: de
 url: "https://netbuk.github.io/maennerhort"
 baseurl: "/maennerhort"
+permalink: pretty
