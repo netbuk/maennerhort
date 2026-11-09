@@ -1,22 +1,110 @@
 - name: "Markus"
+  nickname: ""
   rolle: "Gründungsmitglied & Technischer Admin"
-- name: "Alex aka Wursti"
+  dabei_seit: ""
+  wanderpokal: 0
+  profile:
+    scolia: ""
+    autodarts: ""
+    grand_darts: ""
+    target: ""
+- name: "Alex"
+  nickname: "Wursti"
   rolle: "Gründungsmitglied & adm. Turnierleitung"
+  dabei_seit: ""
+  wanderpokal: 0
+  profile:
+    scolia: ""
+    autodarts: ""
+    grand_darts: ""
+    target: ""
 - name: "Andy"
+  nickname: ""
   rolle: "Mitglied"
-- name: "Ben aka Bimbes"
+  dabei_seit: ""
+  wanderpokal: 0
+  profile:
+    scolia: ""
+    autodarts: ""
+    grand_darts: ""
+    target: ""
+- name: "Ben"
+  nickname: "Bimbes"
   rolle: "Mitglied"
+  dabei_seit: ""
+  wanderpokal: 0
+  profile:
+    scolia: ""
+    autodarts: ""
+    grand_darts: ""
+    target: ""
 - name: "Björn"
+  nickname: ""
   rolle: "Mitglied"
-- name: "Christian aka Sandman"
+  dabei_seit: ""
+  wanderpokal: 0
+  profile:
+    scolia: ""
+    autodarts: ""
+    grand_darts: ""
+    target: ""
+- name: "Christian"
+  nickname: "Sandman"
   rolle: "Mitglied"
+  dabei_seit: ""
+  wanderpokal: 0
+  profile:
+    scolia: ""
+    autodarts: ""
+    grand_darts: ""
+    target: ""
 - name: "Jürgen"
+  nickname: ""
   rolle: "Mitglied"
+  dabei_seit: ""
+  wanderpokal: 0
+  profile:
+    scolia: ""
+    autodarts: ""
+    grand_darts: ""
+    target: ""
 - name: "Jörg"
+  nickname: ""
   rolle: "Mitglied"
+  dabei_seit: ""
+  wanderpokal: 0
+  profile:
+    scolia: ""
+    autodarts: ""
+    grand_darts: ""
+    target: ""
 - name: "Philipp"
+  nickname: ""
   rolle: "Mitglied"
+  dabei_seit: ""
+  wanderpokal: 0
+  profile:
+    scolia: ""
+    autodarts: ""
+    grand_darts: ""
+    target: ""
 - name: "Thorsten"
-  rolle: "Mitglied"  
-- name: "Thorsten aka Rö"
+  nickname: ""
   rolle: "Mitglied"
+  dabei_seit: ""
+  wanderpokal: 0
+  profile:
+    scolia: ""
+    autodarts: ""
+    grand_darts: ""
+    target: ""
+- name: "Thorsten"
+  nickname: "Rö"
+  rolle: "Mitglied"
+  dabei_seit: ""
+  wanderpokal: 0
+  profile:
+    scolia: ""
+    autodarts: ""
+    grand_darts: ""
+    target: ""

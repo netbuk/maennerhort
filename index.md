@@ -60,9 +60,19 @@ title: Start
   <div class="info-grid">
     {% assign mitglieder = site.data.mitglieder | sort: 'name' %}
     {% for mitglied in mitglieder %}
-    <div class="card">
-      <h3>{{ mitglied.name }}</h3>
-      {% if mitglied.rolle %}<p>{{ mitglied.rolle }}</p>{% endif %}
+    <div class="card member-card">
+      <h3>{{ mitglied.name }}{% if mitglied.nickname %} <span class="member-nickname">aka {{ mitglied.nickname }}</span>{% endif %}</h3>
+      {% if mitglied.rolle %}<p class="member-meta">{{ mitglied.rolle }}</p>{% endif %}
+      {% if mitglied.dabei_seit %}<p class="member-meta">Dabei seit: {{ mitglied.dabei_seit }}</p>{% endif %}
+      <div class="profile-links">
+        {% if mitglied.profile.scolia %}<a class="profile-chip" href="{{ mitglied.profile.scolia }}" target="_blank" rel="noopener">Scolia</a>{% endif %}
+        {% if mitglied.profile.autodarts %}<a class="profile-chip" href="{{ mitglied.profile.autodarts }}" target="_blank" rel="noopener">Autodarts</a>{% endif %}
+        {% if mitglied.profile.grand_darts %}<a class="profile-chip" href="{{ mitglied.profile.grand_darts }}" target="_blank" rel="noopener">Grand Darts</a>{% endif %}
+        {% if mitglied.profile.target %}<a class="profile-chip" href="{{ mitglied.profile.target }}" target="_blank" rel="noopener">Target</a>{% endif %}
+      </div>
+      {% if mitglied.wanderpokal and mitglied.wanderpokal > 0 %}
+      <p class="member-trophy">🏆 Wanderpokal des Männerhort: {{ mitglied.wanderpokal }}× gewonnen</p>
+      {% endif %}
     </div>
     {% endfor %}
   </div>
