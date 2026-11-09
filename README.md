@@ -19,4 +19,6 @@ Termine und Neuigkeiten werden als YAML-Dateien in `_data/` gepflegt – es ist 
 
 ## GitHub Pages aktivieren
 
-In den Repo-Einstellungen unter **Settings → Pages** als Quelle **GitHub Actions** wählen. Der Workflow `.github/workflows/pages.yml` baut die Seite bei jedem Push auf `main` automatisch mit Jekyll und deployt sie. Die Seite ist danach unter `https://netbuk.github.io/maennerhort/` erreichbar.
+In den Repo-Einstellungen unter **Settings → Pages** als Quelle **GitHub Actions** wählen. Der Workflow `.github/workflows/pages.yml` baut die Seite bei jedem Push auf `main` automatisch mit Jekyll und deployt sie.
+
+**Custom Domain:** `maennerhort.netbuk.de` (über die `CNAME`-Datei im Repo-Root gesetzt; zusätzlich in **Settings → Pages → Custom domain** eintragen und „Enforce HTTPS" aktivieren). Beim DNS-Anbieter muss `maennerhort.netbuk.de` per CNAME/ALIAS auf `netbuk.github.io` zeigen. Die Seite ist dann unter `https://maennerhort.netbuk.de/` erreichbar.
