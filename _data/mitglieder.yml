@@ -2,7 +2,7 @@
   nickname: ""
   rolle: "Gründungsmitglied & Technischer Admin"
   dabei_seit: ""
-  wanderpokal: 0
+  wanderpokal: 1
   profile:
     scolia: ""
     autodarts: ""
@@ -51,18 +51,18 @@
 - name: "Christian"
   nickname: "Sandman"
   rolle: "Mitglied"
-  dabei_seit: ""
+  dabei_seit: "2023"
   wanderpokal: 0
   profile:
     scolia: ""
-    autodarts: ""
+    autodarts: "Bimbes-Sandman"
     grand_darts: ""
     target: ""
 - name: "Jürgen"
   nickname: ""
   rolle: "Mitglied"
   dabei_seit: ""
-  wanderpokal: 0
+  wanderpokal: 1
   profile:
     scolia: ""
     autodarts: ""
@@ -102,7 +102,7 @@
   nickname: "Rö"
   rolle: "Mitglied"
   dabei_seit: ""
-  wanderpokal: 0
+  wanderpokal: 4
   profile:
     scolia: ""
     autodarts: ""
