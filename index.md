@@ -71,3 +71,17 @@ title: Start
     </div>
   </div>
 </section>
+
+<section id="mitglieder" class="section">
+  <h2>Mitglieder</h2>
+  <p class="section-intro">Unsere Hobbygruppe – schön, dass du dabei bist!</p>
+  <div class="info-grid">
+    {% assign mitglieder = site.data.mitglieder | sort: 'name' %}
+    {% for mitglied in mitglieder %}
+    <div class="card">
+      <h3>{{ mitglied.name }}</h3>
+      {% if mitglied.rolle %}<p>{{ mitglied.rolle }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>

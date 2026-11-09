@@ -9,6 +9,7 @@ Flatfile-GitHub-Page (Jekyll, ohne Datenbank) für die Hobbygruppe Steeldart aus
 - `impressum.md` / `datenschutz.md` – Impressum und Datenschutzerklärung (verlinkt im Footer; Platzhalter für Adresse/Kontakt anpassen)
 - `_data/termine.yml` – alle Termine (einfach Einträge ergänzen/anpassen)
 - `_data/news.yml` – Neuigkeiten
+- `_data/mitglieder.yml` – Mitgliederliste (Name, optional Rolle; Platzhalter ersetzen)
 - `_layouts/default.html` – Seitenlayout (Header mit Logo, Navigation, Footer)
 - `assets/logo.png` – Gruppenlogo
 - `assets/css/style.css` – Gestaltung
