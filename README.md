@@ -4,7 +4,7 @@ Flatfile-GitHub-Page (Jekyll, ohne Datenbank) für die Hobbygruppe Steeldart aus
 
 ## Aufbau
 
-- `index.md` – Startseite mit den Bereichen Termine (aktuelles Jahr, zweispaltig), Neuigkeiten und Informationen
+- `index.md` – Startseite mit den Bereichen Termine (aktuelle und zukünftige Jahre, zweispaltig), Neuigkeiten, Darter und Informationen
 - `termine-archiv.md` – alle Termine älterer Jahre, nach Jahr gruppiert (verlinkt unter den Terminen)
 - `impressum.md` / `datenschutz.md` – Impressum und Datenschutzerklärung (verlinkt im Footer; Platzhalter für Adresse/Kontakt anpassen)
 - `_data/termine.yml` – alle Termine (einfach Einträge ergänzen/anpassen)

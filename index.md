@@ -12,36 +12,38 @@ title: Start
 <section id="termine" class="section">
   {% assign aktuelles_jahr = 'now' | date: '%Y' %}
   {% assign heute = 'now' | date: '%Y-%m-%d' %}
-  {% assign jahre = site.data.termine | sort: 'datum' | reverse | group_by_exp: 't', 't.datum | date: "%Y"' %}
-  {% assign termine_aktuell = '' | split: '' %}
-  {% for jahr in jahre %}
-    {% if jahr.name == aktuelles_jahr %}{% assign termine_aktuell = jahr.items %}{% endif %}
-  {% endfor %}
-  <h2>Termine {{ aktuelles_jahr }}</h2>
+  {% assign jahre = site.data.termine | sort: 'datum' | reverse | group_by_exp: 't', 't.datum | date: "%Y"' | sort: 'name' | reverse %}
+  <h2>Termine</h2>
   <p class="section-intro">Was ist dieses Jahr gelaufen und was steht noch an.</p>
-  {% if termine_aktuell.size > 0 %}
-  <div class="termine-grid">
-    {% for termin in termine_aktuell %}
-    <article class="card termin-card">
-      <div class="termin-datum">
-        <span class="termin-wochentag">{{ termin.wochentag }}</span>
-        <span class="termin-datum-text">{{ termin.datum | date: "%d.%m.%Y" }}</span>
-        <span class="termin-uhrzeit">{{ termin.uhrzeit }} Uhr</span>
-      </div>
-      <div class="termin-body">
-        <h3>{{ termin.titel }}</h3>
-        <p class="termin-status">
-          {% if termin.datum >= heute %}<span class="status status-offen">offen</span>{% else %}<span class="status status-abgeschlossen">abgeschlossen</span>{% endif %}
-        </p>
-        <p class="termin-ort">{{ termin.ort }}</p>
-        <p>{{ termin.beschreibung }}</p>
-      </div>
-    </article>
-    {% endfor %}
-  </div>
-  {% else %}
-  <p class="section-intro">Aktuell sind keine Termine für {{ aktuelles_jahr }} eingetragen.</p>
-  {% endif %}
+  {% assign shown = false %}
+  {% for jahr in jahre %}
+    {% if jahr.name >= aktuelles_jahr %}
+    {% assign shown = true %}
+    <h3 class="archiv-jahr">{{ jahr.name }}</h3>
+    <div class="termine-grid">
+      {% for termin in jahr.items %}
+      <article class="card termin-card">
+        <div class="termin-datum">
+          <span class="termin-wochentag">{{ termin.wochentag }}</span>
+          <span class="termin-datum-text">{{ termin.datum | date: "%d.%m.%Y" }}</span>
+          <span class="termin-uhrzeit">{{ termin.uhrzeit }} Uhr</span>
+        </div>
+        <div class="termin-body">
+          <h3>{{ termin.titel }}</h3>
+          <p class="termin-status">
+            {% if termin.datum >= heute %}<span class="status status-offen">offen</span>{% else %}<span class="status status-abgeschlossen">abgeschlossen</span>{% endif %}
+          </p>
+          <p class="termin-ort">{{ termin.ort }}</p>
+          <p>{{ termin.beschreibung }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% endif %}
+  {% endfor %}
+  {% unless shown %}
+  <p class="section-intro">Aktuell sind keine Termine ab {{ aktuelles_jahr }} eingetragen.</p>
+  {% endunless %}
   <p style="margin-top: 1.25rem;"><a href="{{ '/termine-archiv/' | relative_url }}">Ältere Termine im Terminarchiv ansehen →</a></p>
 </section>
 
