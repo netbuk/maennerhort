@@ -55,8 +55,8 @@ title: Start
 </section>
 
 <section id="mitglieder" class="section">
-  <h2>Mitglieder</h2>
-  <p class="section-intro">Unsere Hobbygruppe – schön, dass du dabei bist!</p>
+  <h2>Darter</h2>
+  <p class="section-intro">The Hall of Fame ;)</p>
   <div class="info-grid">
     {% assign mitglieder = site.data.mitglieder | sort: 'name' %}
     {% for mitglied in mitglieder %}
