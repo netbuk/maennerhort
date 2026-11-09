@@ -54,6 +54,20 @@ title: Start
   </div>
 </section>
 
+<section id="mitglieder" class="section">
+  <h2>Mitglieder</h2>
+  <p class="section-intro">Unsere Hobbygruppe – schön, dass du dabei bist!</p>
+  <div class="info-grid">
+    {% assign mitglieder = site.data.mitglieder | sort: 'name' %}
+    {% for mitglied in mitglieder %}
+    <div class="card">
+      <h3>{{ mitglied.name }}</h3>
+      {% if mitglied.rolle %}<p>{{ mitglied.rolle }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
 <section id="info" class="section">
   <h2>Informationen</h2>
   <div class="info-grid">
@@ -69,19 +83,5 @@ title: Start
       <h3>Steeldart</h3>
       <p>Wir spielen mit richtigen Darts :D – klassisch 501, Double-Out.</p>
     </div>
-  </div>
-</section>
-
-<section id="mitglieder" class="section">
-  <h2>Mitglieder</h2>
-  <p class="section-intro">Unsere Hobbygruppe – schön, dass du dabei bist!</p>
-  <div class="info-grid">
-    {% assign mitglieder = site.data.mitglieder | sort: 'name' %}
-    {% for mitglied in mitglieder %}
-    <div class="card">
-      <h3>{{ mitglied.name }}</h3>
-      {% if mitglied.rolle %}<p>{{ mitglied.rolle }}</p>{% endif %}
-    </div>
-    {% endfor %}
   </div>
 </section>
